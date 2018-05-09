@@ -10,7 +10,7 @@ import './assets/style/iconfont.css'
 // 首页轮播
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import 'swiper/dist/css/swiper.css'
-Vue.use(VueAwesomeSwiper, /* { default global options } */)
+Vue.use(VueAwesomeSwiper, /* { default global options } */ )
 
 Vue.config.productionTip = false
 fastClick.attach(document.body)
@@ -18,8 +18,8 @@ fastClick.attach(document.body)
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  components: { App },
-  template: '<App/>'
+    el: '#app',
+    router,
+    components: { App },
+    template: '<App/>'
 })
