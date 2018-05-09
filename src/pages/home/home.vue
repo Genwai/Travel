@@ -3,6 +3,10 @@
       <home-header ></home-header>
       <home-swiper :swiperList ="swiperList"></Home-swiper>
       <home-icons :iconList="iconList"></home-icons>
+      <home-slide></home-slide>
+      <home-recommend ></home-recommend>
+      <home-weekendgo ></home-weekendgo>
+
   </div>
 </template>
 
@@ -10,6 +14,9 @@
 import HomeHeader from './components/header'
 import HomeSwiper from './components/swiper'
 import HomeIcons from './components/icons'
+import HomeRecommend from './components/recommend'
+import HomeSlide from './components/slide'
+import HomeWeekendgo from './components/weekendgo'
 export default {
   data() {
     return {
@@ -90,6 +97,9 @@ export default {
       HomeHeader,
       HomeSwiper,
       HomeIcons,
+      HomeRecommend,
+      HomeSlide,
+      HomeWeekendgo,
   }
 }
 </script>
