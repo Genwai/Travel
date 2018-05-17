@@ -106,5 +106,7 @@ export default {
 
 <style lang="stylus" scoped>
     // 在移动端 1 rem = html  font-size =50 px 
+    .page
+      background #ffffff
 </style>
 

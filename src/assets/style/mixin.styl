@@ -1,0 +1,25 @@
+// 显示1像素的边框
+border-1px($color)
+    position relative
+    &:after
+        display block
+        position absolute
+        top 0px
+        bottom 0px
+        right 0px
+        left 0px
+        content " "
+        border-bottom 1px solid $color
+        // @media(-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
+        //     transform scaleY(0.33)
+        // @media(-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2)
+        //     transform scaleY(0.5)
+border-none()
+    &:after
+        border none 
+
+whiteSpace($width)
+    white-space nowrap
+    overflow hidden
+    text-overflow ellipsis
+    width $width

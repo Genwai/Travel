@@ -50,6 +50,8 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+    // @import '../../../assets/style/vareble.styl'
+    @import '~@/assets/style/mixin.styl'
     .recommend
         .title
             padding .14rem 0 .13rem
@@ -132,6 +134,12 @@ export default {
                             font-size .24rem
                             color #616161
                             line-height 0.4rem
+                            // white-space nowrap
+                            // overflow hidden
+                            // text-overflow ellipsis
+                            // width 60px
+                            whiteSpace(60px)
+                            text-align right 
                     .make-feature
                         margin-top .48rem
                         margin-right .24rem
