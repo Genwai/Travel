@@ -3,7 +3,7 @@
         <swiper :options="swiperOption" ref="mySwiper" >
         <!-- slides key:使用了标示每个不同-->
             <swiper-slide v-for="item in swiperList" :key="item.id">
-                <img class="swiper-img" :src="item.imgSrc" alt="图片">
+                <img class="swiper-img" :src="item.imgUrl" alt="图片">
             </swiper-slide>
         <!-- Optional controls -->
             <div class="swiper-pagination"  slot="pagination"></div>

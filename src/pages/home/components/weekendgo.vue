@@ -4,14 +4,14 @@
           <h1 class="title">周末去哪儿</h1>
       </div>
       <div class="recommend-container">
-          <div class="recommend-wrapper border-bottom" >
+          <div class="recommend-wrapper border-bottom" v-for="item in weekendList">
               <div class="recommend-img">
-                  <img src="http://img1.qunarzz.com/sight/p0/1703/f3/f30bcaa66d5f0a0ea3.img.jpg_200x200_ea3702df.jpg" alt="">
+                  <img :src="item.imgUrl" alt="">
               </div>
               <div class="recommend-right">
-                  <h1 class="title">世茂云上厦门观光厅</h1>
+                  <h1 class="title">{{item.title}}</h1>
                   <div class="make-feature">
-                      <p class="text">感受闽南地区的特色民俗文化和南洋文化</p>
+                      <p class="text">{{item.desc}}</p>
                   </div>
               </div>
           </div>
@@ -21,6 +21,11 @@
 
 <script type="text/ecmascript-6">
 export default {
+    props: {
+        weekendList:{
+            type:Array
+        }
+    },
   data() {
     return {
         recommendList:[
@@ -47,9 +52,12 @@ export default {
                 vertical-align middle
                 font-size .32rem
         .recommend-container
-            margin-bottom 0.22rem
+            // margin-bottom 0.22rem
             .recommend-wrapper
+                margin-top 5px
                 background #fff
+                &:first-child
+                    margin-top 0
                 .recommend-img
                     position relative
                     img 

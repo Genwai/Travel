@@ -5,15 +5,15 @@
           <h1 class="title">猜你喜欢的</h1>
       </div>
       <div class="recommend-container">
-          <div class="recommend-wrapper border-bottom" >
+          <div class="recommend-wrapper border-bottom" v-for="item in recommendList" >
               <div class="recommend-img">
-                  <img src="http://img1.qunarzz.com/sight/p0/1703/f3/f30bcaa66d5f0a0ea3.img.jpg_200x200_ea3702df.jpg" alt="">
+                  <img :src="item.imgUrl" alt="">
                   <span class="today-order">
                       可订今日
                   </span>
               </div>
               <div class="recommend-right">
-                  <h1 class="title">世茂云上厦门观光厅</h1>
+                  <h1 class="title">{{item.title}}</h1>
                   <div class="star-comment">
                       <span class="star">star</span>
                       <span class="comment">1077条评论</span>
@@ -23,7 +23,7 @@
                       <span class="place">思明区</span>
                   </div>
                   <div class="make-feature">
-                      <p class="text">感受闽南地区的特色民俗文化和南洋文化</p>
+                      <p class="text">{{item.desc}}</p>
                   </div>
               </div>
           </div>
@@ -33,14 +33,11 @@
 
 <script type="text/ecmascript-6">
 export default {
+    props: {
+        recommendList:Array
+    },
   data() {
     return {
-        recommendList:[
-            {
-                title:'厦门方特梦幻王国',
-
-            }
-        ]
     }
   },
   components: {
@@ -147,6 +144,8 @@ export default {
                         color #f55
                         padding .04rem .1rem
                         line-height .34rem
+                        .text
+                            whiteSpace(215px)
                         
 
 

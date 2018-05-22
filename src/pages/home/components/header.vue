@@ -7,17 +7,28 @@
       <div class="header-input">
           <span class="iconfont icon-input">&#xe632;</span>
           输入城市/景点/游玩主题</div>
-      <div class="header-city">城市<span class="iconfont icon-city">&#xe600;</span></div>
+      <router-link to='/city'>
+          <div class="header-city">{{this.currentCity}}<span class="iconfont icon-city">&#xe600;</span></div>
+      </router-link>
+      
     </div>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
+import {mapState} from 'vuex'
   export default {
     data() {
       return {
-
+        //   city:'城市'
       }
+    },
+    computed:{
+        // ...mapState(['city']), 可以直接传数组或者一个对象
+        ...mapState({
+            currentCity:'city'
+        }),
+        
     }
   }
 
@@ -54,11 +65,15 @@
             .icon-input
                 padding-left .20rem
         .header-city
-            width 1.24rem
+            min-width 1.04rem
             float right 
             text-align center
+            color #ffffff
+            white-space nowrap
+            padding 0 0.1rem
             .icon-city
                 font-size .25rem
+                margin-left 0.06rem
 
 
             

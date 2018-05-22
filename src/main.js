@@ -9,6 +9,7 @@ import './assets/style/border.css'
 import './assets/style/iconfont.css'
 // 首页轮播
 import VueAwesomeSwiper from 'vue-awesome-swiper'
+import store from './store'
 import 'swiper/dist/css/swiper.css'
 Vue.use(VueAwesomeSwiper, /* { default global options } */ )
 
@@ -20,6 +21,7 @@ fastClick.attach(document.body)
 new Vue({
     el: '#app',
     router,
+    store,
     components: { App },
     template: '<App/>'
 })
