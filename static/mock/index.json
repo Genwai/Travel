@@ -1,0 +1,126 @@
+{
+    "ret": true,
+    "data": {
+        "swiperList": [{
+            "id": "0001",
+            "imgUrl": "http://img1.qunarzz.com/piao/fusion/1805/bf/bb3027b882d50202.jpg_750x200_041a8de2.jpg"
+
+        }, {
+            "id": "0002",
+            "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/85/09000ddc9a6df502.png_750x200_6adfcd38.png"
+
+        }, {
+            "id": "0003",
+            "imgUrl": "http://img1.qunarzz.com/piao/fusion/1805/10/3ee6df72beb86402.jpg_750x200_e02a4c99.jpg"
+
+        }, {
+            "id": "0004",
+            "imgUrl": "http://img1.qunarzz.com/piao/fusion/1804/9f/88f6c60082b0c002.jpg_750x200_16292dc4.jpg"
+
+        }],
+        "iconList": [{
+                "id": "008",
+                "imgSrc": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
+                "desc": "景点门"
+            },
+            {
+                "id": "001",
+                "imgSrc": "http://img1.qunarzz.com/piao/fusion/1804/ed/cf572be30fc32f02.png",
+                "desc": "+精选"
+            },
+            {
+                "id": "002",
+                "imgSrc": "http://img1.qunarzz.com/piao/fusion/1803/89/55083b0f1951f302.png",
+                "desc": "游船游"
+            },
+            {
+                "id": "003",
+                "imgSrc": "http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
+                "desc": "踏青赏"
+            },
+            {
+                "id": "004",
+                "imgSrc": "http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
+                "desc": "动植物"
+            },
+            {
+                "id": "005",
+                "imgSrc": "http://img1.qunarzz.com/piao/fusion/1803/95/8246f27355943202.png",
+                "desc": "游乐场"
+            },
+            {
+                "id": "006",
+                "imgSrc": "http://img1.qunarzz.com/piao/fusion/1803/c1/6f15f887179fa002.png",
+                "desc": "厦门老子"
+            },
+            {
+                "id": "007",
+                "imgSrc": "http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png",
+                "desc": "名胜古"
+            },
+            {
+                "id": "008",
+                "imgSrc": "http://img1.qunarzz.com/piao/fusion/1803/97/02f5043b51b2102.png",
+                "desc": "鼓浪屿"
+            },
+            {
+                "id": "009",
+                "imgSrc": "http://img1.qunarzz.com/piao/fusion/1803/80/416c6ab3368d1f02.png",
+                "desc": "全部玩"
+            }
+        ],
+
+        "recommendList": [{
+            "id": "0001",
+            "imgUrl": "http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_140x140_80f63803.jpg",
+            "title": "故宫",
+            "desc": "东方宫殿建筑代表，世界宫殿建筑典范"
+        }, {
+            "id": "0002",
+            "imgUrl": "http://img1.qunarzz.com/sight/p0/1511/d2/d2aec2dfc5aa771290.water.jpg_140x140_abb362a7.jpg",
+            "title": "南山滑雪场",
+            "desc": "北京专业级滑雪圣地"
+        }, {
+            "id": "0003",
+            "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/f4/f467729126949c3a.water.jpg_140x140_ef235b1c.jpg",
+            "title": "天安门广场",
+            "desc": "我爱北京天安门，天安门上太阳升"
+        }, {
+            "id": "0004",
+            "imgUrl": "http://img1.qunarzz.com/sight/p0/1501/40/40b2b6c951b28fdd.water.jpg_140x140_1c863e5c.jpg",
+            "title": "水立方",
+            "desc": "中国的荣耀，阳光下的晶莹水滴"
+        }, {
+            "id": "0005",
+            "imgUrl": "http://img1.qunarzz.com/sight/p0/201308/23/b283071686e64dfec8d65eac.jpg_140x140_8c5a7c49.jpg",
+            "title": "温都水城养生馆",
+            "desc": "各种亚热带植物掩映其间仿佛置身热带雨林"
+        }],
+        "weekendList": [{
+            "id": "0001",
+            "imgUrl": "http://img1.qunarzz.com/sight/source/1510/6e/1ea71e2f04e.jpg_r_640x214_aa6f091d.jpg",
+            "title": "北京温泉排行榜",
+            "desc": "细数北京温泉，温暖你的冬天"
+        }, {
+            "id": "0002",
+            "imgUrl": "http://img1.qunarzz.com/sight/source/1505/aa/7baaf8a851d221.jpg_r_640x214_1431200f.jpg",
+            "title": "北京必游TOP10",
+            "desc": "来北京必去的景点非这些地方莫属"
+        }, {
+            "id": "0003",
+            "imgUrl": "http://img1.qunarzz.com/sight/source/1505/9e/21df651e19af5d.jpg_r_640x214_3ea5bb38.jpg",
+            "title": "寻找北京的皇城范儿",
+            "desc": "数百年的宫廷庙宇，至今依旧威严霸气"
+        }, {
+            "id": "0004",
+            "imgUrl": "http://img1.qunarzz.com/sight/source/1505/ce/bc89bc2f0e33ea.jpg_r_640x214_3e408453.jpg",
+            "title": "学生最爱的博物馆",
+            "desc": "周末干嘛？北京很多博物馆已经免费开放啦"
+        }, {
+            "id": "0005",
+            "imgUrl": "http://img1.qunarzz.com/sight/source/1505/b2/fde1bfcd057a52.jpg_r_640x214_bbf3fa44.jpg",
+            "title": "儿童剧场，孩子的乐园",
+            "desc": "带宝贝观看演出，近距离体验艺术的无穷魅力"
+        }]
+    }
+}
