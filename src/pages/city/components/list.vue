@@ -60,7 +60,7 @@ export default {
   },
   methods:{
     handleCityNameClick(city){
-      console.log('city', city)
+      // console.log('city', city)
       // this.nowPosition = city;
       this.$store.commit('cityChange',city)
       this.$router.push({path:'/'})
@@ -70,7 +70,7 @@ export default {
   watch: {
     letter () {
       if (this.letter) {
-        console.log('LETTER', this.letter)
+        // console.log('LETTER', this.letter)
         const elements  = this.$refs[this.letter][0];
         this.scroll.scrollToElement(elements)
         console.log('elements', elements)

@@ -1,8 +1,14 @@
 <template>
   <div class="alphabat">
     <ul class="containers">
-        <li class="item" v-for="(item,key) in cities" :key="key"
-        @click.prevent="hangdleLetterClick">{{key}}</li>
+        <li class="item" v-for="(item,key) in letterStore" 
+            :key="key"
+            :ref="item"
+            @click.prevent="hangdleLetterClick"
+            @touchstart.prevent = "handleTouchStart"
+            @touchmove = "handleTouchMove"
+            @touchend = "handleTouchEnd"
+        >{{item}}</li>
     </ul>
   </div>
 </template>
@@ -17,12 +23,53 @@ export default {
   data() {
     return {
         letter:String,
+        flagStar:false,
+        timer:null,
+        clientA:0,
+        // letterArray:[]
     }
+  },
+  updated(){
+       this.clientA = this.$refs['A'][0].offsetTop
+  },
+  computed:{
+      letterStore(){
+          let letterArray = [];
+          for (const key in this.cities) {
+            //   console.log('keyline', key)
+              letterArray.push(key)
+          }
+          return letterArray
+      }
   },
   methods: {
       hangdleLetterClick(el){
-          this.letter = el.target.innerHTML;
+          this.letter = el.target.innerHTML;//获取点击的A
           this.$emit('letter',this.letter)
+      },
+      handleTouchStart(el){
+        //   console.log('handleTouchStart',el.touches[0])
+          this.flagStar = true;
+      },
+      handleTouchMove(el){
+        //   console.log('handleTouchMove',el)
+          if (this.flagStar ) {
+              if (this.timer) {
+                  clearTimeout(this.timer)
+              }
+              this.timer = setTimeout(() => {
+                  const touchY = el.touches[0].clientY - 79 ;
+                  const index = Math.floor((touchY - this.clientA - 60) / 20);
+                  const number = this.letterStore[index];//确定到某个字母
+                //   console.log('clientA', this.clientA) clientA 不起作用
+                   this.$emit('letter',number)
+                
+              }, 20);
+          }
+      },
+      handleTouchEnd(el){
+          console.log('handleTouchMove',el)
+          
       }
   }
 }

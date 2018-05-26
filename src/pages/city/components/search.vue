@@ -35,7 +35,6 @@ export default {
       // this.$store.commit('cityChange',city)
       this.cityChange(city)
       this.$router.push({path:'/'})
-      
     },
     ...mapMutations(['cityChange']),
   },
@@ -94,7 +93,7 @@ export default {
   width: 100%;
   // height 100%
   height 45px
-  margin-top 0.85rem
+  margin-top 0.84rem
   // overflow: hidden;
   z-index: 100;
   .searchContext

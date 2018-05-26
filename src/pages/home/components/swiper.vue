@@ -27,9 +27,14 @@
           // 所有的参数同 swiper 官方 api 参数
           pagination: {
             el: '.swiper-pagination',
+            clickable:true,
+            observer:true,//修改swiper自己或子元素时，自动初始化swiper    重要  
+            observeParents:true,//修改swiper的父元素时，自动初始化swiper  重要  
+            longSwipesRatio: 0.3,  
+            touchRatio:1, 
             },
           loop:true,
-
+          autoplay: true,//可选选项，自动滑动
 
         },
       }
@@ -42,8 +47,8 @@
     mounted() {
       // current swiper instance
       // 然后你就可以使用当前上下文内的swiper对象去做你想做的事了
-      console.log('this is current swiper instance object', this.swiper)
-      this.swiper.slideTo(3, 1000, false)
+    //   console.log('this is current swiper instance object', this.swiper)
+      // this.swiper.slideTo(1, 1000, false)
     }
   }
 </script>

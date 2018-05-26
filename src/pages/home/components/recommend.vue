@@ -5,7 +5,9 @@
           <h1 class="title">猜你喜欢的</h1>
       </div>
       <div class="recommend-container">
-          <div class="recommend-wrapper border-bottom" v-for="item in recommendList" >
+       
+              <router-link :to="'detail/'+ item.id" tag="div" class="recommend-wrapper border-bottom" 
+              v-for="(item,index) in recommendList" :key="index">
               <div class="recommend-img">
                   <img :src="item.imgUrl" alt="">
                   <span class="today-order">
@@ -26,7 +28,8 @@
                       <p class="text">{{item.desc}}</p>
                   </div>
               </div>
-          </div>
+   
+          </router-link>
       </div>
   </div>
 </template>
