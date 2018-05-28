@@ -1,11 +1,13 @@
 <template>
   <div class="page">
       <detail-banner></detail-banner>
+      <detail-header></detail-header>
   </div>
 </template>
 
 <script type="text/ecmascript-6">
 import detailBanner from './components/banner'
+import detailHeader from './components/header'
 export default {
   data() {
     return {
@@ -13,7 +15,8 @@ export default {
     }
   },
   components: {
-  detailBanner
+  detailBanner,
+  detailHeader
   }
 }
 </script>
