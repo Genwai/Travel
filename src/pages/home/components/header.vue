@@ -2,7 +2,7 @@
   <div class="header">
     <div class="header-container">
       <div class="header-back">
-          <span class="iconfont icon-back">&#xe624;</span>
+          <span class="iconfont icon-back">&#xe682;</span>
       </div>
       <div class="header-input">
           <span class="iconfont icon-input">&#xe632;</span>

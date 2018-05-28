@@ -6,7 +6,7 @@
               <img class="detrail-img" src="//img1.qunarzz.com/sight/p0/1508/a5/4003f9dd7bebf61eccbf64046e26d487.water.jpg_600x330_a80ff353.jpg" alt="">
           </div>
           <div class="header-back" @click="detailBack">
-            <span class="iconfont icon-back">&#xe624;</span>
+            <span class="iconfont icon-back">&#xe682;</span>
           </div>
           <div class="dtail-number">
               <span>16</span>

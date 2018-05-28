@@ -1,5 +1,5 @@
 <template>
-  <div class="page">
+  <div class="detail">
       <detail-banner></detail-banner>
       <detail-header></detail-header>
   </div>
@@ -22,4 +22,6 @@ export default {
 </script>
 
 <style scoped lang="stylus">
+  .detail
+    height 50rem
 </style>

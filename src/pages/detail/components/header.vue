@@ -1,11 +1,13 @@
 <template>
-  <div class="header">
-      <div class="header-icon" @click="detailBack">
-        <span class="iconfont icon-back">&#xe624;</span>
+  <div>
+    <div class="header" :style="headerStyle" ref="header" v-show="headerShow">
+      <div class="header-icon-back" @click="detailBack">
+        <span class="iconfont icon-back">&#xe682;</span>
       </div>
       <div class="header-text">
         世贸云上厦门观光厅
       </div>
+   </div>
   </div>
 </template>
 
@@ -13,13 +15,31 @@
 export default {
   data() {
     return {
-
+      headerStyle:{
+        opacity:0
+      },
+      headerShow:false
     }
   },
   methods: {
     detailBack(){
          this.$router.push({path:'/'})
+    },
+    handleScroll(){
+      const height = document.documentElement.scrollTop;
+      let opacity = height / 120 ;
+      if(height > 40){
+        this.headerShow =true;
+        opacity = opacity >=1 ? 1: opacity;
+        this.headerStyle.opacity =  opacity;
+      }else{
+        this.headerShow =false;
+      }
+      console.log(height)
     }
+  },
+  mounted () {
+    window.addEventListener('scroll',this.handleScroll)
   }
 }
 </script>
@@ -35,12 +55,15 @@ export default {
     color #ffffff
     display flex 
     background #00bcd4
-    z-index 99
-      .header-icon
+    font-size 0.32rem
+    height 
+      .header-icon-back
         width 0.88rem
         height 0.88rem
         line-height 0.88rem
+        text-align center
         display inline-block
+        font-size 0.32rem
       .header-text
         flex 1
         display inline-block
