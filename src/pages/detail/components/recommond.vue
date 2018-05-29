@@ -60,6 +60,8 @@ export default {
             font-size 0.36rem
             height 0.46rem
             line-height 0.46rem
+            &::before
+                padding-left 0.2rem
             .tickyType
                 background url('//s.qunarzz.com/piao/image/touch/sight/detail.png') 0 -0.9rem no-repeat
                 background-size 0.4rem 3rem

@@ -156,7 +156,7 @@ export default {
           color #9e9e9e
           font-size 0.24rem
     .baseInfo-position
-      padding 0.2rem 0.2rem 0.5rem
+      padding 0.2rem 
       color #212121
       display flex 
       position relative
@@ -168,7 +168,7 @@ export default {
         display inline-block
         margin-right 0.4rem
         height 0.44rem
-        line-height 0.36rem
+        line-height 0.44rem
         padding 0 0.1rem 0 0.1rem
       .base-right
         position absolute
