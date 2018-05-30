@@ -159,6 +159,7 @@ export default {
       padding 0.2rem 
       color #212121
       display flex 
+      line-height 0.36rem
       position relative
       .position-icon
         display inline-block
@@ -167,8 +168,6 @@ export default {
       .text
         display inline-block
         margin-right 0.4rem
-        height 0.44rem
-        line-height 0.44rem
         padding 0 0.1rem 0 0.1rem
       .base-right
         position absolute
