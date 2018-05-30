@@ -73,7 +73,7 @@ export default {
       }else{
         this.headerShow =false;
       }
-      console.log(height)
+      // console.log(height)
     }
   },
   mounted () {

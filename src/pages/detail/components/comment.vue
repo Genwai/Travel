@@ -19,8 +19,8 @@
             </common-drop>
           </div>
       </div>
-      <div class="comment-pictures border-bottom">
-          <div class="commet-context">
+      <div class="comment-pictures ">
+          <div class="commet-context ">
                 <div class="img-container">
                     <img class="commet-img" src="https://imgs.qunarzz.com/piao/fusion/1801/95/1e125742224b0e02.jpg_228x168_44f39438.jpg" alt="">
                 </div>
@@ -40,6 +40,10 @@
                     <img class="commet-img" src="https://imgs.qunarzz.com/piao/fusion/1801/95/1e125742224b0e02.jpg_228x168_44f39438.jpg" alt="">
                 </div>
           </div>
+           <div class="overleave">
+                      查看剩余产品<span class="iconfont">&#xe61f;</span>
+            </div>
+
       </div>
   </div>
 </template>
@@ -105,6 +109,14 @@ export default {
                     width 100%
                     height 100%
                     background-size cover
+        .overleave
+            height 0.48rem
+            line-height 0.48rem
+            text-align center
+            padding 0.2rem
+            font-size 0.28rem
+            color #616161
+            border-top 1px dashed #dadada
 
                 
 

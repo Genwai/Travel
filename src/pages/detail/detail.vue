@@ -6,7 +6,8 @@
       <detail-recommond></detail-recommond>
       <detail-slide></detail-slide>
       <detail-comment></detail-comment>
-      
+      <detail-slide></detail-slide>
+      <detail-more></detail-more>
   </div>
 </template>
 
@@ -16,6 +17,7 @@ import detailHeader from './components/header'
 import detailRecommond from './components/recommond'
 import detailComment from './components/comment'
 import detailSlide from '../home/components/slide'
+import detailMore from './components/seeMore'
 
 export default {
   data() {
@@ -29,6 +31,7 @@ export default {
   detailSlide,
   detailRecommond,
   detailComment,
+  detailMore
   }
 }
 </script>

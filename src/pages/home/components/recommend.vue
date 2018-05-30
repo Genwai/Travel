@@ -139,16 +139,16 @@ export default {
                             // text-overflow ellipsis
                             // width 60px
                             whiteSpace(60px)
-                            text-align left  
+                            text-align right   
                     .make-feature
                         margin-top .48rem
-                        margin-right .24rem
+                        // margin-right .24rem
                         font-size .24rem
                         color #f55
-                        padding .04rem .1rem
+                        // padding .04rem .1rem
                         line-height .34rem
                         .text
-                            whiteSpace(215px)
+                            whiteSpace(200px)
                         
 
 
