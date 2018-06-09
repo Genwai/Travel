@@ -5,16 +5,16 @@
       </div>
       <div class="list-container">
           <ul>
-              <li class="listItem">
-                  <div class="Item-top border-bottom" @click="handleContainClick">
+              <li v-for="(item,index) in list" class="listItem" @click="handleContainClick($event,index)" v-if="index < itemLength">
+                  <div class="Item-top border-bottom" >
                         <div class="Item-left">
-                            【厦门出发】南普陀寺+厦门大学+演武大桥+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游
+                            {{item.detail}}
                         </div>
                         <div class="Item-right" >
-                            ￥<span class="number">205</span><span class="name">起</span><span class="iconfont">&#xe61f;</span>
+                            ￥<span class="number">{{item.price}}</span><span class="name">起</span><span class="iconfont">&#xe61f;</span>
                         </div>
                   </div>
-                  <div class="Item-container border-bottom" v-show="ItemContainer">
+                  <div class="Item-container border-bottom" v-if="index == nowIndex && ItemContainer"  >
                       <div class="Item-container-left">
                           <h1 class="text">老渔港半日游｜南普陀·猫街·沙坡尾·演武观景平台·厦门大学</h1>
                           <div class="contian-img">
@@ -38,7 +38,7 @@
                   </div>
                   
               </li>
-              <li class="ItemLast">
+              <li class="ItemLast" v-show="list.length > 2 && Leave" @click="LeaveProdect">
                   <div class="overleave">
                       查看剩余产品<span class="iconfont">&#xe61f;</span>
                   </div>
@@ -53,17 +53,51 @@
 export default {
   data() {
     return {
-        ItemContainer:false
+        ItemContainer:false,
+        list:[
+            {
+                detail:'【厦门出发】南普陀寺+厦门大学+演武大桥+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游',
+                price:'205'
+            },
+            {
+                detail:'【厦门出发】南普陀寺+厦门大学+演武大桥+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游',
+                price:'205'
+            },
+            {
+                detail:'【厦门出发】南普陀寺+厦门大学+演武大桥+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游',
+                price:'205'
+            },
+            {
+                detail:'【厦门出发】南普陀寺+厦门大学+演武大桥+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游',
+                price:'205'
+            },
+            {
+                detail:'【厦门出发】南普陀寺+厦门大学+演武大桥+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游+沙坡尾1日游',
+                price:'205'
+            }
+        ],
+        nowIndex:-1,
+        itemLength:3,
+        Leave:true
     }
   },
   methods: {
-    handleContainClick(){
-        this.ItemContainer = !this.ItemContainer
+    handleContainClick(event,index){
+
+        if(this.ItemContainer){
+            this.nowIndex = -1;
+        }
+        this.nowIndex = index;
+        this.ItemContainer= !this.ItemContainer;
+    },
+    LeaveProdect(){
+        this.itemLength = this.list.length;
+        this.Leave =false;
     }  
   },
-  components: {
-
-  }
+    computed: {
+        
+    }
 }
 </script>
 

@@ -21,7 +21,7 @@
         "iconList": [{
                 "id": "008",
                 "imgSrc": "http://img1.qunarzz.com/piao/fusion/1803/95/f3dd6c383aeb3b02.png",
-                "desc": "景点门"
+                "desc": "景点门票"
             },
             {
                 "id": "001",
@@ -31,17 +31,17 @@
             {
                 "id": "002",
                 "imgSrc": "http://img1.qunarzz.com/piao/fusion/1803/89/55083b0f1951f302.png",
-                "desc": "游船游"
+                "desc": "游船游戏"
             },
             {
                 "id": "003",
                 "imgSrc": "http://img1.qunarzz.com/piao/fusion/1803/bd/9f7b9b2b60c1502.png",
-                "desc": "踏青赏"
+                "desc": "踏青赏花"
             },
             {
                 "id": "004",
                 "imgSrc": "http://img1.qunarzz.com/piao/fusion/1803/76/eb88861d78fb9902.png",
-                "desc": "动植物"
+                "desc": "动植物园"
             },
             {
                 "id": "005",
@@ -56,7 +56,7 @@
             {
                 "id": "007",
                 "imgSrc": "http://img1.qunarzz.com/piao/fusion/1803/20/831d62d2e1c7be02.png",
-                "desc": "名胜古"
+                "desc": "名胜古迹"
             },
             {
                 "id": "008",

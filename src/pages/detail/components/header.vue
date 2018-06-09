@@ -56,7 +56,12 @@ export default {
       headerStyle:{
         opacity:0
       },
-      headerShow:false
+      headerShow:false,
+      headerList:{
+        navbar:'世贸云上厦门观光厅',
+        
+      }
+    
     }
   },
   methods: {

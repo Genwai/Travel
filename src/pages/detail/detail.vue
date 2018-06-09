@@ -18,8 +18,24 @@ import detailRecommond from './components/recommond'
 import detailComment from './components/comment'
 import detailSlide from '../home/components/slide'
 import detailMore from './components/seeMore'
+import axios from 'axios';
 
 export default {
+  mounted () {
+    this.getDetailInfo()
+  },
+  methods: {
+    getDetailInfo(){
+      axios.get('api/detail.json',{
+        params:{
+          id:this.$route.params.id
+        }
+      }).then(this.getDetailSucss)
+    },
+    getDetailSucss(res){
+      console.log(res)
+    }
+  },
   data() {
     return {
 

@@ -7,7 +7,7 @@
                 
               </div>
           </div>
-          <div class="add-more" @click="showMore">
+          <div class="add-more" @click="showMore" v-if="height > 80">
               <span class="iconfont">{{show?"&#xe604;":"&#xe603;"}}</span>
               </div>
       </div>
@@ -21,12 +21,11 @@ export default {
     return {
         dropHeight:0,
         show:false,
-        height:60,
+        height:80,
     }
   },
   mounted(){
       var height = this.$refs.reference.offsetHeight;
-
       this.dropHeight = height;
       console.log('dropHeight',height)
   },

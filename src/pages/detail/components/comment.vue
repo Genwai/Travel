@@ -91,6 +91,8 @@ export default {
                     color #ffb436
             .comment-right
                 display inline-block
+    .commet-text
+        margin-bottom 0.2rem
     .comment-pictures
         .commet-context
             padding  0 0.2rem 0.1rem

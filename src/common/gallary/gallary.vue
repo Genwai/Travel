@@ -60,6 +60,7 @@ export default {
         display flex 
         justify-content center
         align-items center
+        z-index 99999
         .wrapper-container
             height 0
             padding-bottom 55%
